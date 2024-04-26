@@ -20,11 +20,11 @@ Map：https://qiita.com/RyeWiskey/items/7b9eeec0bf35ac1434d7
 */
 
 func ExecuteValidAnagram(t string, s string) {
-	fmt.Println("### 1.ValidAnagram Start ###")
+	fmt.Println("### 2.ValidAnagram Start ###")
 	fmt.Println(isAnagramSort(t, s))
 	fmt.Println(isAnagramMap(t, s))
 	fmt.Println(isAnagramMap2(t, s))
-	fmt.Println("### 1.ValidAnagram End ###")
+	fmt.Println("### 2.ValidAnagram End ###")
 }
 
 /*
