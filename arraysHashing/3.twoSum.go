@@ -2,7 +2,8 @@ package arrayshashing
 
 import "fmt"
 
-/*　問題
+/*
+　問題
 Level：Easy
 URL：https://leetcode.com/problems/two-sum/description/
 
@@ -17,6 +18,14 @@ func ExecuteTwoSum(nums []int, target int) {
 	fmt.Println("### 3.Two Sum End ###")
 }
 
+/*
+*
+■ Solution-1：ターゲット整数からnumsの要素を引く -> 差分値を検索する
+
+実行結果
+・Runtime：23ms
+・Memory：3.5MB
+*/
 func twoSum(nums []int, target int) []int {
 	var answer = []int{}
 
@@ -26,7 +35,7 @@ outer:
 		minus := target - v
 
 	inner:
-	    //現在のIndex以降の値で差分値と一致する値がないかをチェックする
+		//現在のIndex以降の値で差分値と一致する値がないかをチェックする
 		for j := i + 1; j < len(nums); j++ {
 			if minus != nums[j] {
 				continue inner
